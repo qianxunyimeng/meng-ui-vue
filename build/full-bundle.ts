@@ -42,13 +42,13 @@ export const buildFull = (minify: boolean) => async () => {
     ],
     external: await generateExternal({ full: true }),
   })
-  const banner = `/*! Element Plus v${version} */\n`
+  const banner = `/*! MengUI v${version} */\n`
   await writeBundles(bundle, [
     {
       format: 'umd',
       file: path.resolve(epOutput, `dist/index.full${minify ? '.min' : ''}.js`),
       exports: 'named',
-      name: 'ElementPlus',
+      name: 'MengUI',
       globals: {
         vue: 'Vue',
       },

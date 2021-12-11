@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/element-plus/element-plus.git"
+    "url": "git+https://github.com/qianxunyimeng/meng-ui-vue.git"
   },
   "keywords": [
     "vue-components",
@@ -23,9 +23,9 @@
   "author": "yi.shyang@ele.me",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/element-plus/element-plus#issues"
+    "url": "https://github.com/qianxunyimeng/meng-ui-vue/issues"
   },
-  "homepage": "https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/README.md",
+  "homepage": "https://github.com/qianxunyimeng/meng-ui-vue/blob/dev/packages/theme-chalk/README.md",
   "devDependencies": {
     "@types/gulp-autoprefixer": "0.0.33",
     "@types/gulp-clean-css": "4.3.0",
@@ -36,5 +36,5 @@
     "gulp-rename": "2.0.0",
     "gulp-sass": "5.0.0"
   },
-  "gitHead": "c69724230befa8fede0e6b9c37fb0b7e39fd7cdd"
+  "gitHead": "26ee8b26b53bc7e878e36379cd79cf2aaea526dd"
 }

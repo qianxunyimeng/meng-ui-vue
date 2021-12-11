@@ -49,6 +49,7 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
+    "@element-plus/icons": "^0.0.11",
     "@meng-ui-vue/components": "workspace:*",
     "@meng-ui-vue/directives": "workspace:*",
     "@meng-ui-vue/hooks": "workspace:*",

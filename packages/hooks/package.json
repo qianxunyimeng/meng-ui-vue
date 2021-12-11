@@ -1,6 +1,6 @@
 {
   "name": "@meng-ui-vue/hooks",
-  "description": "Element Plus composables",
+  "description": "MengUI composables",
   "version": "0.0.5",
   "main": "index.ts",
   "module": "index.ts",
@@ -11,5 +11,5 @@
   "peerDependencies": {
     "vue": "^3.2.0"
   },
-  "gitHead": "c69724230befa8fede0e6b9c37fb0b7e39fd7cdd"
+  "gitHead": "26ee8b26b53bc7e878e36379cd79cf2aaea526dd"
 }

@@ -1230,3 +1230,6 @@ $breakpoints-spec: (
   'lg-and-down': '(max-width: #{$xl})',
   'xl-only': '(min-width: #{$xl})',
 ) !default;
+
+$--font-path: 'fonts' !default;
+$--font-display: 'auto' !default;
