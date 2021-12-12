@@ -123,13 +123,13 @@ const copyCode = async () => {
             <CodepenIcon @click="onCodepenClicked" />
           </ElIcon>
         </ElTooltip> -->
-        <ElTooltip :content="locale['edit-on-github']" :visible-arrow="false">
+        <!-- <ElTooltip :content="locale['edit-on-github']" :visible-arrow="false">
           <ElIcon :size="20" class="op-btn github">
             <a :href="demoSourceUrl" rel="noreferrer noopener" target="_blank">
               <GithubIcon />
             </a>
           </ElIcon>
-        </ElTooltip>
+        </ElTooltip> -->
         <ElTooltip :content="locale['copy-code']" :visible-arrow="false">
           <ElIcon :size="20" class="op-btn" @click="copyCode">
             <CopyIcon />

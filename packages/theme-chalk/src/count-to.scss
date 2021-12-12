@@ -1,0 +1,13 @@
+$--font-path: 'fonts' !default;
+$--font-display: 'auto' !default;
+@font-face {
+  font-family: electronicFont;
+  src: url('#{$--font-path}/mx-ds-digit.ttf') format('truetype');
+  font-weight: bold;
+  font-display: $--font-display;
+  font-style: normal;
+}
+
+.mx-count-to-number {
+  font-family: electronicFont;
+}

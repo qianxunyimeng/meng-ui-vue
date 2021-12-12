@@ -1,5 +1,10 @@
 @use './base.scss';
 // component styles
+@use './button.scss';
 @use './badge.scss';
+@use './count-to.scss';
 @use './overlay.scss';
-
+@use  './zoom.scss';
+@use './full-loading.scss';
+@use './split.scss';
+//@import './icon.scss';

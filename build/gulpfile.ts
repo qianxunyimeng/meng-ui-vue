@@ -2,7 +2,13 @@ import path from 'path'
 import { series, parallel } from 'gulp'
 import { run } from './utils/process'
 import { withTaskName } from './utils/gulp'
-import { buildOutput, epOutput, epPackage, projRoot } from './utils/paths'
+import {
+  buildOutput,
+  epOutput,
+  epPackage,
+  projRoot,
+  themeRoot,
+} from "./utils/paths";
 import { buildConfig } from './build-info'
 import type { TaskFunction } from 'gulp'
 import type { Module } from './build-info'
@@ -36,6 +42,8 @@ export const copyTypesDefinitions: TaskFunction = (done) => {
 export const copyFullStyle = async () => {
   await run(`mkdir -p ${epOutput}/dist`)
   await run(`cp ${epOutput}/theme-chalk/index.css ${epOutput}/dist/index.css`)
+  await run(`cp -r ${themeRoot}/src/fonts ${epOutput}/theme-chalk/fonts`)
+  //console.log(`cp -r ${themeRoot}/src/fonts ${epOutput}/theme-chalk/fonts`);
 }
 
 export default series(
@@ -52,7 +60,7 @@ export default series(
       ),
       copyFullStyle
     )
-  ),
+   ),
 
   parallel(copyTypesDefinitions, copyFiles)
 )

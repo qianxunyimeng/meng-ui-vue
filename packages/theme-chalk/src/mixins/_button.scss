@@ -1,0 +1,50 @@
+@use 'sass:map';
+
+@use '../common/var'as *;
+
+@mixin button-plain($color, $type) {
+  --mx-button-text-color: var(--mx-color-#{$type});
+  --mx-button-bg-color: #{map.get($colors, $type, 'light-9')};
+  --mx-button-border-color: #{map.get($colors, $type, 'light-6')};
+
+  --mx-button-hover-text-color: var(--mx-color-white);
+  --mx-button-hover-bg-color: var(--mx-color-#{$type});
+  --mx-button-hover-border-color: var(--mx-color-#{$type});
+
+  --mx-button-active-text-color: var(--mx-color-white);
+  --mx-button-active-border-color: var(--mx-color-#{$type});
+
+  &.is-disabled {
+
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: map.get($colors, $type, 'light-4');
+      background-color: map.get($colors, $type, 'light-9');
+      border-color: map.get($colors, $type, 'light-8');
+    }
+  }
+}
+
+@mixin button-variant($type) {
+  --mx-button-text-color: var(--mx-color-white);
+  --mx-button-disabled-text-color: var(--mx-color-white);
+
+  &.is-plain {
+    @include button-plain(var(--mx-button-bg-color), $type);
+  }
+}
+
+@mixin button-size($padding-vertical,
+  $padding-horizontal,
+  $font-size,
+  $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+
+  &.is-round {
+    padding: $padding-vertical $padding-horizontal;
+  }
+}

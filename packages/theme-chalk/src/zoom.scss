@@ -1,0 +1,112 @@
+.mx-zoom {
+  width: 100%;
+  height: 100%;
+}
+
+.mx-zoom-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & .origin-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  & .img-zoomer {
+    position: absolute;
+    box-sizing: border-box;
+    cursor: crosshair;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+
+    &.circle {
+      border-radius: 50%;
+    }
+  }
+
+  .img-out-show {
+    position: absolute;
+    right: -8px;
+    background-repeat: no-repeat;
+    transform: translate(100%, 0);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  .img-zoomer-point {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+  }
+
+  .img-out-show.base-line::after,
+  .img-out-show.base-line::before {
+    position: absolute;
+    box-sizing: border-box;
+    content: '';
+    border: 1px dashed rgba(0, 0, 0, 0.36);
+  }
+
+  .img-out-show.base-line::after {
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .img-out-show.base-line::before {
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .ks-imagezoom-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //background: url(http://gtms01.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png) repeat scroll 0 0 transparent;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAMAAABFaP0WAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAGUExURT1uzv///62t27cAAAACdFJOU/8A5bcwSgAAABBJREFUeNpiYGBkYGQECDAAAA0ABMZIs2EAAAAASUVORK5CYII=) repeat scroll 0 0 transparent;
+    cursor: move;
+    z-index: 1;
+    font-size: 0;
+  }
+
+}
+
+.mx-zoom-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0;
+
+  .block {
+    width: 30%;
+    height: 50px;
+    background: currentColor;
+  }
+
+  .block.left {
+    float: left;
+  }
+
+  .block.right {
+    float: right;
+  }
+
+  .block.bottom {
+    clear: both;
+  }
+}

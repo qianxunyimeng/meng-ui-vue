@@ -1,0 +1,134 @@
+//@import "common/var";
+@use 'common/var'as *;
+@use 'mixins/button'as *;
+@use 'mixins/mixins'as *;
+@use 'mixins/utils'as *;
+@use 'mixins/var'as *;
+
+@include b(split-wrapper) {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .mx-split-horizontal {
+    .mx-split-trigger-con {
+      top: 50%;
+      height: 100%;
+      width: 0;
+    }
+  }
+
+  .mx-split-vertical {
+    .mx-split-trigger-con {
+      left: 50%;
+      height: 0;
+      width: 100%;
+    }
+  }
+
+  .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .mx-split-pane {
+    position: absolute;
+
+    &.left-pane,
+    &.right-pane {
+      top: 0;
+      bottom: 0;
+    }
+
+    &.left-pane {
+      left: 0;
+    }
+
+    &.right-pane {
+      right: 0;
+      padding-left: 8px;
+    }
+
+    &.top-pane,
+    &.bottom-pane {
+      left: 0;
+      right: 0;
+    }
+
+    &.top-pane {
+      top: 0;
+    }
+
+    &.bottom-pane {
+      bottom: 0;
+      padding-top: 8px;
+    }
+
+  }
+
+  .mx-split-trigger-con {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    .mx-split-trigger {
+      border: 1px solid #dcdee2;
+    }
+
+    .mx-split-trigger-vertical {
+      width: 6px;
+      height: 100%;
+      background: #f8f8f9;
+      border-top: none;
+      border-bottom: none;
+      cursor: col-resize;
+
+      .mx-split-trigger-bar {
+        width: 4px;
+        height: 1px;
+        background: rgba(23, 35, 61, .25);
+        float: left;
+        margin-top: 3px;
+      }
+    }
+
+    .mx-split-trigger-horizontal {
+      height: 6px;
+      width: 100%;
+      background: #f8f8f9;
+      border-left: none;
+      border-right: none;
+      cursor: row-resize;
+
+      .mx-split-trigger-bar {
+        height: 4px;
+        width: 1px;
+        background: rgba(23, 35, 61, .25);
+        float: left;
+        margin-right: 3px;
+      }
+    }
+
+    .mx-split-trigger-bar-con {
+      position: absolute;
+      overflow: hidden;
+
+      &.vertical {
+        left: 1px;
+        top: 50%;
+        height: 32px;
+        transform: translate(0, -50%);
+      }
+
+      &.horizontal {
+        left: 50%;
+        top: 1px;
+        width: 32px;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
