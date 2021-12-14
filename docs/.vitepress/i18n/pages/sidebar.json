@@ -1,0 +1,26 @@
+{
+  "en-US": [
+    {
+      "text": "Guide",
+      "link": "/guide/installation",
+      "activeMatch": "/guide/"
+    },
+    {
+      "text": "Component",
+      "link": "/component/icon",
+      "activeMatch": "/component/"
+    }
+  ],
+  "zh-CN": [
+    {
+      "text": "指南",
+      "link": "/guide/installation",
+      "activeMatch": "/guide/"
+    },
+    {
+      "text": "组件",
+      "link": "/component/icon",
+      "activeMatch": "/component/"
+    }
+  ]
+}

@@ -23,6 +23,6 @@ const goHome = () => {
 <style scoped>
 .el-result {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 </style>

@@ -99,15 +99,15 @@ export default {
       default: 1.5,
     },
     enterEvent: {
-      type: [Object, UIEvent],
+      //type: [Object, UIEvent],
       default: null,
     },
     moveEvent: {
-      type: [Object, UIEvent],
+      //type: [Object, UIEvent],
       default: null,
     },
     leaveEvent: {
-      type: [Object, UIEvent],
+      //type: [Object, UIEvent],
       default: null,
     },
     selector: {

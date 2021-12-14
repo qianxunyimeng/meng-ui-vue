@@ -1,0 +1,42 @@
+{
+  "en-US": {
+    "basic": {
+      "text": "Basic",
+      "children": [
+        {
+          "link": "/icon",
+          "text": "Icon"
+        }
+      ]
+    },
+    "data": {
+      "text": "Data",
+      "children": [
+        {
+          "link": "/badge",
+          "text": "Badge"
+        }
+      ]
+    }
+  },
+  "zh-CN": {
+    "basic": {
+      "text": "Basic 基础组件",
+      "children": [
+        {
+          "link": "/icon",
+          "text": "Icon 图标"
+        }
+      ]
+    },
+    "data": {
+      "text": "Data",
+      "children": [
+        {
+          "link": "/badge",
+          "text": "Badge 徽章"
+        }
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: 'MengUI'
-lang: en-US
+lang: zh-CN
 page: true
 ---
 
