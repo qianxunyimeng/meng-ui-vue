@@ -51,7 +51,7 @@ export const config: UserConfig = {
 
     editLinks: true,
     editLinkText: "在GitHub编辑此页",
-    lastUpdated: "最后更新",
+    lastUpdated: "Last Updated",
 
     logo: "/images/meng-ui-logo.svg",
     logoSmall: "/images/meng-ui-logo-small.svg",

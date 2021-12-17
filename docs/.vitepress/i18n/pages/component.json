@@ -8,33 +8,31 @@
           "text": "Icon"
         }
       ]
-    },
-    "data": {
-      "text": "Data",
-      "children": [
-        {
-          "link": "/badge",
-          "text": "Badge"
-        }
-      ]
     }
   },
   "zh-CN": {
-    "basic": {
-      "text": "Basic 基础组件",
+    "Components": {
+      "text": "Components 组件",
       "children": [
         {
           "link": "/icon",
           "text": "Icon 图标"
-        }
-      ]
-    },
-    "data": {
-      "text": "Data",
-      "children": [
+        },
         {
-          "link": "/badge",
-          "text": "Badge 徽章"
+          "link": "/count-to",
+          "text": "CountTo 计数动画"
+        },
+        {
+          "link": "/full-loading",
+          "text": "FullLoading 资源加载动画"
+        },
+        {
+          "link": "/split",
+          "text": "split 滑动面板"
+        },
+        {
+          "link": "/zoom",
+          "text": "Zoom 放大镜"
         }
       ]
     }

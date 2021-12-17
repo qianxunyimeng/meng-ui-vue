@@ -5,10 +5,10 @@
   const defaultLang = 'zh-CN'
   // docs supported languages
   const langAlias = {
+    zh: 'zh-CN',
     en: 'en-US',
     fr: 'fr-FR',
     es: 'es-ES',
-    zh: 'zh-CN',
   }
   let userPreferredLang = localStorage.getItem(cacheKey) || navigator.language
 
@@ -20,8 +20,11 @@
     (supportedLangs.includes(userPreferredLang)
       ? userPreferredLang
       : defaultLang)
-  localStorage.setItem(cacheKey, language)
-  userPreferredLang = language
+  
+  //localStorage.setItem(cacheKey, language)
+  localStorage.setItem(cacheKey, 'zh-CN')
+  //userPreferredLang = language
+  userPreferredLang = 'zh-CN'
   if (!location.pathname.startsWith(`/${userPreferredLang}`)) {
     const toPath = [`/${userPreferredLang}`]
       .concat(location.pathname.split('/').slice(2))

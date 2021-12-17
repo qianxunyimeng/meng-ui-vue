@@ -81,10 +81,11 @@ useEventListener(window, 'scroll', handleScroll)
       <div :style="containerStyle">
         <div :style="cardStyle">
           <div class="banner" :style="layer0">
-            <img src="/images/theme-index-blue.png" alt="banner" />
-            <div class="jumbotron-red" :style="jumbotronRedStyle">
+            <!-- <img src="/images/theme-index-blue.png" alt="banner" /> -->
+            <img src="/images/meng-ui-main.png" alt="banner" />
+            <!-- <div class="jumbotron-red" :style="jumbotronRedStyle">
               <img src="/images/theme-index-red.png" alt="" />
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

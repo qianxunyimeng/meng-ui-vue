@@ -7,15 +7,5 @@
         "text": "Icon"
       }
     ]
-  },
-
-  "data": {
-    "text": "Data",
-    "children": [
-      {
-        "link": "/badge",
-        "text": "Badge"
-      }
-    ]
   }
 }

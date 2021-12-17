@@ -47,7 +47,7 @@ const currentLink = computed(() => {
         <VPNavbarMenu class="menu" />
         <!-- <VPNavbarThemeToggler v-if="themeEnabled" class="theme-toggler" /> -->
         <!-- 语言切换/翻译 -->
-        <VPNavbarTranslation class="translation" />
+        <!-- <VPNavbarTranslation class="translation" /> -->
         <VPNavbarSocialLinks class="social-links" />
         <VPNavbarHamburger
           :active="fullScreen"

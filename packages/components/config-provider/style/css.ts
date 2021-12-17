@@ -1,2 +1,2 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-config-provider.css'
+import '@meng-ui-vue/components/base/style/css'
+import '@meng-ui-vue/theme-chalk/mx-config-provider.css'
