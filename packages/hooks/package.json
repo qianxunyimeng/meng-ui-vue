@@ -1,0 +1,57 @@
+{
+  "name": "@mengui-vue/hooks",
+  "version": "0.0.1",
+  "description": "Vant Composition API",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.mjs",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.mjs",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "node ./build.js -w",
+    "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly",
+    "build:bundle": "node ./build.js",
+    "build:dev": "pnpm clean && cross-env NODE_ENV=development node ./build.js && pnpm build:types",
+    "build:prod": "pnpm clean && cross-env NODE_ENV=production node ./build.js && pnpm build:types",
+    "release": "pnpm build:prod && release-it",
+    "prepare": "pnpm build:dev"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vant-ui/vant.git",
+    "directory": "packages/vant-use"
+  },
+  "bugs": "https://github.com/vant-ui/vant/issues",
+  "author": "chenjiahan",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.17.12",
+    "release-it": "^15.4.1",
+    "rimraf": "^4.0.4",
+    "typescript": "^5.0.2",
+    "vue": "^3.2.47"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "release-it": {
+    "git": {
+      "tag": false,
+      "commitMessage": "release: @vant/use v${version}"
+    }
+  }
+}
