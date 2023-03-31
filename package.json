@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "pnpm --dir ./packages/vant dev",
+    "lint": "pnpm --dir ./packages/mengui lint",
+    "test": "pnpm --dir ./packages/vant test",
+    "test:watch": "pnpm --dir ./packages/vant test:watch",
+    "test:update": "pnpm --dir ./packages/vant test:update",
+    "build": "pnpm --dir ./packages/mengui build",
+    "build:site": "pnpm --dir ./packages/vant build:site",
+    "docs:dev": "pnpm run --dir ./packages/docs dev",
+    "docs:build": "pnpm run --dir ./packages/docs build",
+    "docs:preview": "pnpm run --dir ./packages/docs serve"
+  },
+  "nano-staged": {
+    "*.md": "prettier --write",
+    "*.{ts,tsx,js,vue,less}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix"
+  },
+  "engines": {
+    "pnpm": ">= 7.0.0"
+  },
+  "packageManager": "pnpm@7.20.0",
+  "devDependencies": {
+    "@vant/cli": "workspace:*",
+    "husky": "^8.0.1",
+    "nano-staged": "^0.8.0",
+    "prettier": "^2.7.1",
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "lint-staged": "^13.1.2"
+  }
+}

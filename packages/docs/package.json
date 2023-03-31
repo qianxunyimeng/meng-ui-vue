@@ -1,0 +1,28 @@
+{
+  "name": "@meng-ui-vue/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.26",
+    "vite": "^3.2.5",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "meng-ui-vue": "workspace:*",
+    "@vitepress-demo-preview/component": "^2.0.2",
+    "@vitepress-demo-preview/plugin": "^1.1.5",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "element-plus": "^2.2.21"
+  }
+}
